@@ -11,7 +11,9 @@
 			"order": [
 				"28bc2137-4511-dae3-6b43-74a00bce6d9a",
 				"6f4c9ecc-28c5-b5d2-7f20-d3d64b44ee23",
-				"7c15f01e-f0f5-6c01-7bef-f5b672729189"
+				"7c15f01e-f0f5-6c01-7bef-f5b672729189",
+				"97e4a225-673c-dc28-f9e4-d59e20902c34",
+				"88f60ad8-3a31-fbf0-d490-5ab3d11901d2"
 			],
 			"owner": "638984",
 			"folders_order": [],
@@ -40,7 +42,7 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1513958843256,
+			"time": 1513959492774,
 			"name": "FindAll",
 			"description": "",
 			"collectionId": "5fc1e066-f47d-d832-196e-faeedac8e0e2",
@@ -91,11 +93,68 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1513958897543,
+			"time": 1513959280043,
 			"name": "FindById",
 			"description": "",
 			"collectionId": "5fc1e066-f47d-d832-196e-faeedac8e0e2",
 			"responses": []
+		},
+		{
+			"id": "88f60ad8-3a31-fbf0-d490-5ab3d11901d2",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:61118/api/pessoa/1",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1513959480534,
+			"name": "Delete",
+			"description": "",
+			"collectionId": "5fc1e066-f47d-d832-196e-faeedac8e0e2",
+			"responses": []
+		},
+		{
+			"id": "97e4a225-673c-dc28-f9e4-d59e20902c34",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:61118/api/pessoa/1",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1513959514396,
+			"name": "Update",
+			"description": "",
+			"collectionId": "5fc1e066-f47d-d832-196e-faeedac8e0e2",
+			"responses": [],
+			"rawModeData": "{\n\t\"id\"   : 1,\n\t\"Nome\" : \"Adriel2\",\n\t\"Sobrenome\" : \"Cardoso2\"\n}\n"
 		}
 	]
 }

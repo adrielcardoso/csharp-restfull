@@ -44,7 +44,43 @@ namespace csharpRest.Controller
 
             return CreatedAtRoute("GetTodo", new { id = pessoa.Id }, pessoa);
         }
+
+        [HttpPut("{id}")]
+        public IActionResult Update(long id, [FromBody] Pessoa item)
+        {
+            if (item == null || item.Id != id)
+            {
+                return BadRequest();
+            }
+
+            var todo = _context.pessoas.FirstOrDefault(t => t.Id == id);
+            if (todo == null)
+            {
+                return NotFound();
+            }
             
+            todo.Nome = item.Nome;
+            todo.Sobrenome = item.Sobrenome;
+
+            _context.pessoas.Update(todo);
+            _context.SaveChanges();
+            return new NoContentResult();
+        }
+
+        [HttpDelete("{id}")]
+        public IActionResult Delete(long id)
+        {
+            var todo = _context.pessoas.FirstOrDefault(t => t.Id == id);
+            if (todo == null)
+            {
+                return NotFound();
+            }
+
+            _context.pessoas.Remove(todo);
+            _context.SaveChanges();
+            return new NoContentResult();
+        }
+
         [HttpGet("{id}", Name = "GetTodo")]
         public IActionResult GetById(long id)
         {
