@@ -1,0 +1,11 @@
+C:\Users\adriel.cardoso\source\repos\csharpRest\csharpRest\bin\Debug\netcoreapp2.0\csharpRest.deps.json
+C:\Users\adriel.cardoso\source\repos\csharpRest\csharpRest\bin\Debug\netcoreapp2.0\csharpRest.runtimeconfig.json
+C:\Users\adriel.cardoso\source\repos\csharpRest\csharpRest\bin\Debug\netcoreapp2.0\csharpRest.runtimeconfig.dev.json
+C:\Users\adriel.cardoso\source\repos\csharpRest\csharpRest\bin\Debug\netcoreapp2.0\csharpRest.dll
+C:\Users\adriel.cardoso\source\repos\csharpRest\csharpRest\bin\Debug\netcoreapp2.0\csharpRest.pdb
+C:\Users\adriel.cardoso\source\repos\csharpRest\csharpRest\obj\Debug\netcoreapp2.0\csharpRest.csprojResolveAssemblyReference.cache
+C:\Users\adriel.cardoso\source\repos\csharpRest\csharpRest\obj\Debug\netcoreapp2.0\csharpRest.csproj.CoreCompileInputs.cache
+C:\Users\adriel.cardoso\source\repos\csharpRest\csharpRest\obj\Debug\netcoreapp2.0\csharpRest.AssemblyInfoInputs.cache
+C:\Users\adriel.cardoso\source\repos\csharpRest\csharpRest\obj\Debug\netcoreapp2.0\csharpRest.AssemblyInfo.cs
+C:\Users\adriel.cardoso\source\repos\csharpRest\csharpRest\obj\Debug\netcoreapp2.0\csharpRest.dll
+C:\Users\adriel.cardoso\source\repos\csharpRest\csharpRest\obj\Debug\netcoreapp2.0\csharpRest.pdb
