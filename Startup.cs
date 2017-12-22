@@ -24,7 +24,10 @@ namespace csharpRest
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<DataContext>(opt => opt.UseInMemoryDatabase("TodoList"));
+            String baseLocal = Configuration.GetConnectionString("BaseLocal");
+            services.AddDbContext<DataContext>(opt => opt.UseSqlServer(baseLocal));
+            
+            //DataContext.ConnectionString = Configuration.GetConnectionString("BaseLocal");
             services.AddMvc();
         }
 

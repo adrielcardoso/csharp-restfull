@@ -17,12 +17,6 @@ namespace csharpRest.Controller
         public PessoaController(DataContext context)
         {
             _context = context;
-
-            if (_context.pessoas.Count() == 0)
-            {
-                _context.pessoas.Add(new Pessoa { Nome = "Item1" });
-                _context.SaveChanges();
-            }
         }
 
         [HttpGet]

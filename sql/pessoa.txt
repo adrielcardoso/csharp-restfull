@@ -1,0 +1,4 @@
+create table pessoas (
+	ID int IDENTITY(1,1) PRIMARY KEY,
+	Nome varchar(255), Sobrenome varchar(255)
+)
