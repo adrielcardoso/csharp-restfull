@@ -13,6 +13,6 @@ namespace csharpRest
             : base(options)
         {}
 
-        public DbSet<Pessoa> pessoa { get; set; }
+        public DbSet<Pessoa> pessoas { get; set; }
     }
 }

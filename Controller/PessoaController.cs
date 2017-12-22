@@ -18,9 +18,9 @@ namespace csharpRest.Controller
         {
             _context = context;
 
-            if (_context.pessoa.Count() == 0)
+            if (_context.pessoas.Count() == 0)
             {
-                _context.pessoa.Add(new Pessoa { Nome = "Item1" });
+                _context.pessoas.Add(new Pessoa { Nome = "Item1" });
                 _context.SaveChanges();
             }
         }
@@ -28,13 +28,27 @@ namespace csharpRest.Controller
         [HttpGet]
         public IEnumerable<Pessoa> GetAll()
         {
-            return _context.pessoa.ToList();
+            return _context.pessoas.ToList();
         }
 
+        [HttpPost]
+        public IActionResult Create([FromBody] Pessoa pessoa)
+        {
+            if (pessoa == null)
+            {
+                return BadRequest();
+            }
+
+            _context.pessoas.Add(pessoa);
+            _context.SaveChanges();
+
+            return CreatedAtRoute("GetTodo", new { id = pessoa.Id }, pessoa);
+        }
+            
         [HttpGet("{id}", Name = "GetTodo")]
         public IActionResult GetById(long id)
         {
-            var item = _context.pessoa.FirstOrDefault(t => t.Id == id);
+            var item = _context.pessoas.FirstOrDefault(t => t.Id == id);
             if (item == null)
             {
                 return NotFound();

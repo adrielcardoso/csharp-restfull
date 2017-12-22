@@ -1,0 +1,101 @@
+{
+	"id": "5fc1e066-f47d-d832-196e-faeedac8e0e2",
+	"name": "Nucleo - Ravex",
+	"description": "",
+	"order": [],
+	"folders": [
+		{
+			"name": "Pessoa",
+			"description": "",
+			"collectionId": "5fc1e066-f47d-d832-196e-faeedac8e0e2",
+			"order": [
+				"28bc2137-4511-dae3-6b43-74a00bce6d9a",
+				"6f4c9ecc-28c5-b5d2-7f20-d3d64b44ee23",
+				"7c15f01e-f0f5-6c01-7bef-f5b672729189"
+			],
+			"owner": "638984",
+			"folders_order": [],
+			"id": "24864752-6cdb-98d0-6abd-b569cd3744ea"
+		}
+	],
+	"folders_order": [
+		"24864752-6cdb-98d0-6abd-b569cd3744ea"
+	],
+	"timestamp": 1513939605937,
+	"owner": "638984",
+	"public": false,
+	"requests": [
+		{
+			"id": "28bc2137-4511-dae3-6b43-74a00bce6d9a",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:61118/api/pessoa",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1513958843256,
+			"name": "FindAll",
+			"description": "",
+			"collectionId": "5fc1e066-f47d-d832-196e-faeedac8e0e2",
+			"responses": []
+		},
+		{
+			"id": "6f4c9ecc-28c5-b5d2-7f20-d3d64b44ee23",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:61118/api/pessoa",
+			"folder": "24864752-6cdb-98d0-6abd-b569cd3744ea",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1513958899157,
+			"name": "Create",
+			"description": "",
+			"collectionId": "5fc1e066-f47d-d832-196e-faeedac8e0e2",
+			"responses": [],
+			"rawModeData": "{\n\t\"Nome\" : \"Adriel\",\n\t\"Sobrenome\" : \"Cardoso\"\n}\n"
+		},
+		{
+			"id": "7c15f01e-f0f5-6c01-7bef-f5b672729189",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:61118/api/pessoa/1",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1513958897543,
+			"name": "FindById",
+			"description": "",
+			"collectionId": "5fc1e066-f47d-d832-196e-faeedac8e0e2",
+			"responses": []
+		}
+	]
+}
